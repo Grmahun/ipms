@@ -1,10 +1,10 @@
 version: 0.0
 os: linux
 files:
-  - source: /target/ipms-web.war
-    destination: /tmp/codedeploy-deployment-staging-area/
+  - source: ipms-web.war
+    destination: /var/lib/tomcat7/webapps
   - source: /scripts/configure_http_port.xsl
-    destination: /tmp/codedeploy-deployment-staging-area/
+    destination: /var/lib/tomcat7/webapps
 hooks:
   ApplicationStop:
     - location: scripts/stop_application.txt
