@@ -7,5 +7,5 @@ phases:
       - mvn package
 artifacts:
   files:
-    - ipms.war
+    - target/ipms-web.war
   discard-paths: yes
