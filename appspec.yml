@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /
+  - source: /target/SampleMavenTomcatApp.war
     destination: /tmp/codedeploy-deployment-staging-area/
   - source: /scripts/configure_http_port.xsl
     destination: /tmp/codedeploy-deployment-staging-area/
@@ -10,7 +10,7 @@ hooks:
     - location: scripts/stop_application.txt
       timeout: 300
   BeforeInstall:
-    - location: scripts/install_dependencies
+    - location: scripts/install_dependencies.txt
       timeout: 300
   ApplicationStart:
     - location: scripts/write_codedeploy_config.sh
