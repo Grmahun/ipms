@@ -7,5 +7,6 @@ phases:
       - mvn package
 artifacts:
   files:
-    - '**/*'
-  discard-paths: yes
+    - appspec.yml
+    - target/SampleMavenTomcatApp.war
+    - scripts/*
