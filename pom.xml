@@ -752,6 +752,7 @@
 		<httpclient.version>4.1.3</httpclient.version>
 		<jodatime.version>2.0</jodatime.version>
 		<org.aspectj.version>1.5.4</org.aspectj.version>
+		<maven.test.failure.ignore>true</maven.test.failure.ignore>
 	</properties>
 
 </project>
