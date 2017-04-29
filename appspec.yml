@@ -9,9 +9,11 @@ hooks:
   ApplicationStop:
     - location: scripts/stop_application.txt
       timeout: 300
-  AfterInstall:
+      runas: root
+  BeforeInstall:
     - location: scripts/install_dependencies.txt
-      timeout: 300
+      timeout: 900
+      runas: root
   ApplicationStart:
     - location: scripts/write_codedeploy_config.sh
     - location: scripts/start_application.txt
