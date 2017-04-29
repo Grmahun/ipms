@@ -1,0 +1,12 @@
+version: 0.1
+
+phases:
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - mvn package
+artifacts:
+  files:
+    - appspec.yml
+    - target/ipms-web.war
+    - scripts/*
