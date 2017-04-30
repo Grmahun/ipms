@@ -314,7 +314,7 @@
 					<%-- 	<img
 							src="${pageContext.request.contextPath}/resources/images/IPMS_logo3.png"
 							width="281" height="68" style="padding-left:2px" alt="IPMS"> --%>
-						<h2 style="color:navy;margin-left: 10px; text-align: center;">IPMS</h2>
+						<h2 style="color:navy;margin-left: 10px; text-align: center;">IPMS-Test3</h2>
 					</div> <%-- <span>IPMS Login</span>--%>
 
 				</li>
